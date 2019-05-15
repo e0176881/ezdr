@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.skytech.ez_dr.R.layout"/>
+<fullyQualifiedTypeName name="android.widget.RelativeLayout"/>
+<fullyQualifiedTypeName name="android.content.res.Resources"/>
+<fullyQualifiedTypeName name="android.graphics.drawable.Drawable"/>
+<fullyQualifiedTypeName name="com.skytech.ez_dr.selectmap"/>
+<fullyQualifiedTypeName name="com.skytech.ez_dr.MyHistory"/>
+<fullyQualifiedTypeName name="android.support.v4.app.Fragment"/>
+<fullyQualifiedTypeName name="android.graphics.drawable.ColorDrawable"/>
+<fullyQualifiedTypeName name="android.graphics.Color"/>
+<fullyQualifiedTypeName name="android.util.TypedValue"/>
+<fullyQualifiedTypeName name="android.text.Html"/>
+</qualifiedTypeNameHistroy>

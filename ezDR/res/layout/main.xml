@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login1" 
+               android:layout_marginRight="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="20dp"/>
+		        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center"
+              android:layout_alignParentBottom="true"
+              >
+                        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/dot1" 
+                android:layout_centerHorizontal="true"
+           />
+		            </RelativeLayout>
+
+        </RelativeLayout>
+
+       <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login2"
+                android:layout_marginRight="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="20dp" />
+		        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center"
+              android:layout_alignParentBottom="true"
+              >
+                        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/dot2" 
+                android:layout_centerHorizontal="true"
+           />
+		            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login3" 
+                android:layout_marginRight="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="20dp"/>
+
+            		        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center"
+              android:layout_alignParentBottom="true"
+              >
+                        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/dot3" 
+                android:layout_centerHorizontal="true"
+           />
+		            </RelativeLayout>
+        </RelativeLayout>
+                <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login4" 
+                android:layout_marginRight="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="20dp"/>
+
+		        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center"
+              android:layout_alignParentBottom="true"
+              >
+                        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/dot4" 
+                android:layout_centerHorizontal="true"
+           />
+		            </RelativeLayout>       </RelativeLayout>
+                <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login5" 
+                android:layout_marginRight="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="20dp"/>
+
+		        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center"
+              android:layout_alignParentBottom="true"
+              >
+                        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/dot5" 
+                android:layout_centerHorizontal="true"
+           />
+		            </RelativeLayout>       </RelativeLayout>
+                <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login6" 
+                android:layout_marginRight="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="20dp"/>
+
+		        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center"
+              android:layout_alignParentBottom="true"
+              >
+                        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/dot6" 
+                android:layout_centerHorizontal="true"
+           />
+		            </RelativeLayout>
+                        <Button
+                android:id="@+id/btnskip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="20dp"
+                android:text="Skip"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ViewFlipper>
+
+    <LinearLayout
+        style="@style/ButtonContainer"
+        android:orientation="horizontal"
+         android:visibility="gone" >
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@android:drawable/ic_media_play" 
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_media_pause" 
+             android:visibility="gone"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/swipe_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/swipe_left"
+         android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/swipe_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/swipe_right"
+         android:visibility="gone" />
+
+</RelativeLayout>

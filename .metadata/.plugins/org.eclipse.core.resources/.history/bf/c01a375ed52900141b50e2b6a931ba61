@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:fillViewport="true"> 
+  
+    
+ 
+
+
+<ScrollView
+
+  android:id="@+id/bottom"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true"
+  android:background="#E10015">
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#E10015"
+         >
+ 
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                   android:scaleType="fitXY"
+                             android:orientation="vertical"
+                             android:layout_gravity="center_horizontal">
+                <!-- Logo Start-->
+        <ImageView
+                android:id="@+id/ImageView3_Left"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:maxWidth="100dp"
+    android:maxHeight="100dp"
+   android:scaleType="fitXY"
+                             android:orientation="vertical"
+                             android:layout_gravity="center_horizontal"
+				android:background="@drawable/ezdrlogo"
+
+                ></ImageView>
+          <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="EzDr"
+                android:layout_marginTop="20dip"
+                android:textSize="25dip"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+                 <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Book a doctor straight"
+                android:layout_marginTop="20dip"
+                android:textSize="20dip"
+                android:gravity="center"
+                />
+                     <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="from your phone"
+                android:textSize="20dip"
+                android:gravity="center"
+                />
+                     
+                     <ImageView
+                android:id="@+id/ImageView3_Left"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:maxHeight="100dp"
+   android:scaleType="fitXY"
+                             android:orientation="vertical"
+                             android:layout_gravity="center_horizontal"
+				android:background="@drawable/steps"
+
+                ></ImageView>
+                <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+        <!-- Footer Start -->
+        <LinearLayout android:id="@+id/footer"
+            android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="90dip"
+                android:layout_alignParentBottom="true">
+        </LinearLayout>
+        <!-- Footer Ends -->
+ 
+        <!-- Login Form -->
+        <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="10dip"
+          android:layout_below="@id/header">
+          <!--  Email Label -->
+ 
+          <Button android:id="@+id/btnLogin"
+                  android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Book a Doctor"
+android:textSize="20dip"
+android:alpha="1" 
+android:textColor="#FFFFFF"
+android:background="@drawable/buttonstyle"
+                 />
+                   <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="Login"
+                android:id="@+id/lbpassword"
+                android:layout_marginTop="10dip"
+                android:textSize="18dip"
+                android:gravity="center"
+                />
+  <TextView 
+	android:id="@+id/tv"  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text=""
+    />
+        </LinearLayout>
+        <!-- Login Form Ends -->
+
+      
+
+  </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

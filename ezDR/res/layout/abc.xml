@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#E10015" 
+  >
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/homebar">
+     <ImageButton
+                   android:id="@+id/imageButton"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dip"
+                   android:src="@drawable/ic_launcher"
+                   android:background="@drawable/ic_launcher" />
+  <LinearLayout
+     android:layout_alignParentRight="true"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+     >
+
+    
+     <ImageButton
+                   android:id="@+id/imageButton2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_launcherdoc"
+                   android:background="#00FFFFFF" />
+      <ImageButton
+                   android:id="@+id/imageButton3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_launcherclinich"
+                   android:background="#00FFFFFF" />
+       <ImageButton
+                   android:id="@+id/imageButton4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_launcherpaymenth"
+                   android:background="#00FFFFFF" />
+        </LinearLayout>
+   
+    
+    
+</RelativeLayout>
+  
+
+  <!-- Scrollable Item below header and above footer -->
+  <ScrollView
+      android:layout_below="@+id/top"
+    android:id="@+id/scrollableContents"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+      >
+
+    <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:orientation="vertical" >
+
+        
+                                           <ImageView
+                android:id="@+id/ImageView3_Left"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+
+                ></ImageView>
+        
+
+      <TextView
+          android:id="@+id/lblSymptoms"
+          android:layout_below="@+id/ImageView3_Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the Symptoms:"
+        android:textSize="19sp"
+         android:textColor="#FFFFFF"  />
+  <LinearLayout
+      android:layout_below="@+id/lblSymptoms"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/cb1"
+       >
+      <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                
+                android:textSize="10dip"
+                android:text="Cough"
+                 android:textColor="#FFFFFF" 
+                 android:color="#FFFFFF"
+                  android:button="@drawable/customcheckbox"  />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:textSize="10dip"
+                android:text="Flu"
+                 android:textColor="#FFFFFF"
+                                  android:layout_marginLeft="20dp"
+                  android:color="#000000"  android:button="@drawable/customcheckbox" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:textSize="10dip"
+                android:text="Body Pains"
+                                 android:layout_marginLeft="20dp"
+                 android:textColor="#FFFFFF"  
+                  android:color="#000000"  android:button="@drawable/customcheckbox" />
+</LinearLayout>
+  <LinearLayout
+      android:id="@+id/checkboxes"
+      android:layout_below="@+id/cb1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+     >
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+				
+                
+                android:textSize="10dip"
+                android:text="Fever"
+                 android:textColor="#FFFFFF"
+                  android:color="#000000"  android:button="@drawable/customcheckbox" />
+
+             <CheckBox
+                android:id="@+id/cbDiarrhea"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+				                 android:layout_marginLeft="20dp"
+                
+                android:textSize="10dip"
+                android:text="Diarrhea"
+                 android:textColor="#FFFFFF"
+                  android:color="#000000"  android:button="@drawable/customcheckbox" />
+                         <CheckBox
+                android:id="@+id/cbVomiting"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+				
+                                 android:layout_marginLeft="20dp"
+                android:textSize="10dip"
+                android:text="Vomiting"
+                 android:textColor="#FFFFFF"
+                  android:color="#000000"  android:button="@drawable/customcheckbox" />
+            
+          
+</LinearLayout>
+
+    <LinearLayout
+      android:id="@+id/checkboxes2"
+      android:layout_below="@+id/checkboxes"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+     >
+          <CheckBox
+                android:id="@+id/cbHeadache"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+
+                android:textSize="10dip"
+                android:text="Headache"
+                 android:textColor="#FFFFFF"
+                  android:color="#000000"  android:button="@drawable/customcheckbox" />                 
+        
+    <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                android:textSize="10dip"
+                android:text="Others"
+                 android:textColor="#FFFFFF"
+                  android:color="#000000"  android:button="@drawable/customcheckbox" />
+    
+    </LinearLayout>
+  
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="fill_parent"
+                android:layout_height="300px"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/checkboxes2"
+                android:background="@layout/textlines"
+                android:ems="10"
+                android:textSize="10dip"  
+                android:padding="5dip"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="#000000"
+                android:gravity="top|left"  android:button="@drawable/customcheckbox" />
+  <LinearLayout
+      android:layout_below="@+id/editText1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+       android:id="@+id/lol"
+     >
+            <TextView
+                android:id="@+id/lbmc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MC Required :"
+        android:textSize="19sp"
+         android:textColor="#FFFFFF"  />
+            
+            <RadioGroup 	
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+   >
+            <RadioButton
+                android:id="@+id/rbMC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dip"
+                android:text="1 Day"
+                 android:textColor="#FFFFFF"
+                  android:color="#000000" 
+                  android:button="@drawable/custom_radio_button"  />
+
+            <RadioButton
+                android:id="@+id/rbMC2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                android:textSize="10dip"
+                android:text="2 Days"
+                 android:textColor="#FFFFFF"
+                  android:color="#000000" 
+                  android:button="@drawable/custom_radio_button"  />
+           <RadioButton
+                android:id="@+id/rbMC3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                android:textSize="10dip"
+                android:text="More"
+                 android:textColor="#FFFFFF"
+                  android:color="#000000" 
+                  android:button="@drawable/custom_radio_button"   />
+           </RadioGroup>
+</LinearLayout>
+
+
+           <Button
+               android:layout_below="@+id/lol"
+                android:id="@+id/imgbtnBook"
+                android:background="@drawable/buttonstyle"
+                android:text="Next"
+                android:textSize="12dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true" />                 
+
+    </RelativeLayout>
+
+  </ScrollView>
+
+</RelativeLayout>

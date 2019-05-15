@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/homebar" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:background="@drawable/ic_launcher"
+                android:src="@drawable/ic_launcher" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="20dip"
+            android:gravity="center"
+            android:text="My Health Book"
+            android:textColor="#FFFFFF"
+            android:textSize="20dip"
+            android:textStyle="bold"
+            android:id="@+id/pagename" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:background="#E10015" >
+
+        <ScrollView
+            android:id="@+id/scrollableContents"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#E10015" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#E10015"
+                android:orientation="horizontal"
+                android:tileMode="repeat" >
+
+                <!-- Header  Starts -->
+
+                <LinearLayout
+                    android:id="@+id/header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip" >
+
+                    <!-- Logo Start -->
+
+                    <ImageView
+                        android:id="@+id/ImageView3_Left"
+                        android:layout_width="match_parent"
+                        android:layout_height="300sp" >
+                    </ImageView>
+
+                    <!-- Logo Ends -->
+                </LinearLayout>
+                <!-- Header Ends -->
+                <!-- NRIC -->
+
+                <TextView
+                    android:id="@+id/lbl1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header"
+                    android:text="NRIC"
+                    android:textColor="#FFFFFF" 
+                    android:layout_marginLeft="5dip"/>
+
+                <EditText
+                    android:id="@+id/his_NRIC"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbl1"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="#E0E0E0"
+                    android:singleLine="true"
+                    android:padding="5dp" />
+
+                <!-- FullName -->
+
+                <TextView
+                    android:id="@+id/lbl2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/his_NRIC"
+                    android:text="FullName"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="5dip" />
+
+                <EditText
+                    android:id="@+id/his_fullname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbl2"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="#E0E0E0"
+                    android:singleLine="true"
+                    android:padding="5dp"
+                     />
+
+                <TextView
+                    android:id="@+id/lbl3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/his_fullname"
+                    android:text="Address"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="5dip" />
+
+                <EditText
+                    android:id="@+id/his_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbl3"
+                    android:layout_marginBottom="5dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:background="#E0E0E0"
+                    android:singleLine="true" 
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/lblmessage2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/his_address"
+                    android:text="Allergies"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dip"
+                    android:layout_marginLeft="5dip" />
+
+                <EditText
+                    android:id="@+id/allergies"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/lblmessage2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@layout/textlines"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:maxLength="150"
+                    android:padding="5dip" />
+
+                <TextView
+                    android:id="@+id/lblmessage3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/allergies"
+                    android:text="Medication"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dip"
+                    android:layout_marginLeft="5dip" />
+
+                <EditText
+                    android:id="@+id/medication"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/lblmessage3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@layout/textlines"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:maxLength="150"
+                    android:padding="5dip" />
+
+                <TextView
+                    android:id="@+id/lblmessage4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/medication"
+                    android:text="Medical History:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dip"
+                    android:layout_marginLeft="5dip" />
+
+                <EditText
+                    android:id="@+id/medicalhistory"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/lblmessage4"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@layout/textlines"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:maxLength="150"
+                    android:padding="5dip" />
+
+                <TextView
+                    android:id="@+id/TextViewaaa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/medicalhistory"
+                     >
+                </TextView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/TextViewaaa" >
+
+                    <Button
+                        android:id="@+id/btnBook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/buttonstyle"
+                        android:text="Register" />
+
+                    <Button
+                        android:id="@+id/btnUpdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/buttonstyle"
+                        android:text="Update" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  >
+    <RelativeLayout
+        android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/homebar">
+  <LinearLayout
+      android:layout_alignParentLeft="true"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    
+     >
+
+    <ImageButton
+                   android:id="@+id/imageButton1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dip"
+                   android:src="@drawable/ic_launcher"
+                   android:background="@drawable/ic_launcher" />
+    
+        </LinearLayout>
+
+
+    <TextView
+        android:layout_alignParentRight="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textColor="#FFFFFF"
+               android:layout_centerInParent="true"
+        android:layout_marginRight="20dip"
+        android:gravity="center"
+ android:textStyle="bold"
+        android:textSize="20dip"
+       android:text="Home" 
+       android:id="@+id/pagename"/>
+
+    
+    
+    
+</RelativeLayout>
+
+<ScrollView
+     android:layout_below="@+id/top"
+ android:id="@+id/scrollableContents"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E10015"
+      >
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#E10015">
+ 
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingBottom="5dip"
+                  >
+                <!-- Logo Start-->
+
+                  <ImageView
+                android:id="@+id/ImageView3_Left"
+                android:layout_width="match_parent"
+                android:layout_height="300sp"
+  
+                ></ImageView>
+
+                <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+       
+ <!-- Login Form -->
+       
+    
+        <!-- Login Form Ends -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/header"
+            android:id="@+id/idd"
+            
+            android:orientation="vertical"
+            android:tileMode="repeat" >
+<TextView 
+		android:textColor="#FFFFFF"
+		android:id="@+id/TextView01" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+	</TextView>
+	
+          <LinearLayout
+ android:layout_height="wrap_content"
+ android:layout_width="fill_parent"
+ android:orientation="horizontal"
+ android:weightSum="1.0"
+                 android:layout_marginTop="31dp"
+>
+                 <RelativeLayout
+            android:layout_weight=".33"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+             >
+          <ImageButton
+                android:id="@+id/imgbtnAbout"
+                android:src="@drawable/ic_launcher"
+                android:background="#F2F5F5"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+               />
+          <TextView 
+		android:textColor="#FFFFFF"
+		android:text="ABOUT US"
+		android:textStyle="bold"
+		android:layout_below="@+id/imgbtnAbout"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		
+		>
+	</TextView>
+          </RelativeLayout>
+            <RelativeLayout
+            android:layout_weight=".33"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+             >
+             <ImageButton
+                android:id="@+id/imgbtnBook"
+                android:src="@drawable/ic_launcher"
+                android:background="#F2F5F5"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+
+               />
+                      <TextView 
+		android:textColor="#FFFFFF"
+		android:textStyle="bold"
+		android:text="BOOK A DR"
+		android:layout_below="@+id/imgbtnBook"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:gravity="center">
+	</TextView>
+          </RelativeLayout>
+           <RelativeLayout
+            android:layout_weight=".33"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+             >
+              <ImageButton
+                android:id="@+id/imgbtnClinics"
+                android:src="@drawable/ic_launcher"
+                android:background="#F2F5F5"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                  />
+                                   <TextView 
+        android:layout_below="@+id/imgbtnClinics"
+        android:textStyle="bold"
+		android:textColor="#FFFFFF"
+		android:text="CLINICS"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:gravity="center">
+	</TextView>
+          </RelativeLayout>
+                   </LinearLayout>
+          <LinearLayout
+ android:layout_height="wrap_content"
+ android:layout_width="fill_parent"
+ android:orientation="horizontal"
+ android:weightSum="1.0"
+                 android:layout_marginTop="120dp"
+>
+           <RelativeLayout
+            android:layout_weight=".2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+             >
+                                   </RelativeLayout>
+            <RelativeLayout
+            android:layout_weight=".3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+             >
+           <ImageButton
+                android:id="@+id/imgbtnHistory"
+                android:src="@drawable/ic_launcher"
+                android:background="#F2F5F5"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+
+                 />
+                                            <TextView 
+        android:layout_below="@+id/imgbtnHistory"
+		android:textColor="#FFFFFF"
+		android:text="MY HEALTH BOOK"
+		android:textStyle="bold"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center">
+	</TextView>
+           </RelativeLayout>
+   <RelativeLayout
+            android:layout_weight=".3"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+             >
+<ImageButton
+                android:id="@+id/imglogout"
+                   android:src="@drawable/ic_launcher"
+                               android:background="#F2F5F5"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                  />
+                                         <TextView 
+        android:layout_below="@+id/imglogout"
+		android:textColor="#FFFFFF"
+		android:text="LOGOUT"
+		android:textStyle="bold"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:gravity="center">
+	</TextView>
+           </RelativeLayout>
+                      <RelativeLayout
+            android:layout_weight=".2"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+             >
+                                   </RelativeLayout>
+</LinearLayout>
+</RelativeLayout>
+  </RelativeLayout>
+  
+</ScrollView>
+ 
+  </RelativeLayout>
+  
